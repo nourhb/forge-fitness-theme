@@ -1,0 +1,131 @@
+/*
+Theme Name: Forge
+Theme URI: https://github.com/Nourhb/forge-fitness-theme
+Author: Nour El Houda Bouajila
+Author URI: https://nour-el-houda-bouajila.rf.gd/
+Description: Forge is a high-energy Full Site Editing theme for gyms and fitness studios. Near-black canvas, molten orange accents, condensed display type, class schedules, trainer profiles, membership tiers and transformation stories — a premium athletic brand site out of the box.
+Version: 1.0.0
+Requires at least: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: forge
+Tags: full-site-editing, blog, portfolio, grid-layout, one-column, two-columns, custom-logo, custom-menu, featured-images, footer-widgets, sticky-post, theme-options, translation-ready, dark, wide-blocks
+*/
+
+/* Forge — front-end polish. Design tokens live in theme.json. */
+
+/* Diagonal energy stripe divider */
+.forge-slash {
+    height: 6px;
+    background: repeating-linear-gradient(
+        -55deg,
+        var(--wp--preset--color--forge) 0 18px,
+        transparent 18px 36px
+    );
+}
+
+/* Reveal on scroll */
+.forge-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s cubic-bezier(.22,1,.36,1);
+}
+.forge-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Energy hover for cards */
+.forge-card {
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+    border: 1px solid transparent;
+}
+.forge-card:hover {
+    transform: translateY(-6px) skewY(-.4deg);
+    border-color: var(--wp--preset--color--forge);
+    box-shadow: 0 18px 44px -18px rgba(255, 77, 28, .55);
+}
+
+/* Buttons — full power */
+.wp-block-button.is-style-forge-outline .wp-block-button__link {
+    background: transparent;
+    border: 2px solid var(--wp--preset--color--forge);
+    color: #fff;
+}
+.wp-block-button.is-style-forge-outline .wp-block-button__link:hover {
+    background: var(--wp--preset--color--forge);
+    color: #0d0d0f;
+    box-shadow: 0 0 24px rgba(255, 77, 28, .7);
+}
+
+/* Schedule table heat */
+.wp-block-table.is-style-forge-schedule table {
+    border-collapse: collapse;
+}
+.wp-block-table.is-style-forge-schedule td,
+.wp-block-table.is-style-forge-schedule th {
+    border: 1px solid rgba(255,255,255,.12);
+    padding: .85rem 1rem;
+}
+.wp-block-table.is-style-forge-schedule thead th {
+    background: var(--wp--preset--color--forge);
+    color: #0d0d0f;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+.wp-block-table.is-style-forge-schedule tbody tr:nth-child(even) {
+    background: rgba(255,255,255,.035);
+}
+.wp-block-table.is-style-forge-schedule tbody tr:hover {
+    background: rgba(255, 77, 28, .12);
+}
+
+/* Big condensed display treatment */
+.forge-display {
+    text-transform: uppercase;
+    letter-spacing: .01em;
+    line-height: .95;
+}
+
+/* Back to top */
+.forge-top {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    background: var(--wp--preset--color--forge);
+    color: #0d0d0f;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity .3s ease, transform .3s ease, visibility .3s;
+    z-index: 60;
+    font-size: 1.25rem;
+}
+.forge-top.is-shown {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+.forge-top:hover {
+    box-shadow: 0 0 22px rgba(255, 77, 28, .8);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .forge-reveal { opacity: 1; transform: none; transition: none; }
+    .forge-card, .forge-top { transition: none; }
+    .forge-card:hover { transform: none; }
+}
+
+/* Print */
+@media print {
+    .forge-top { display: none; }
+}
