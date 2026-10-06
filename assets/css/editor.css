@@ -1,0 +1,19 @@
+/* Forge — editor styles */
+.editor-styles-wrapper {
+    background: #0d0d0f;
+    color: #f4f1ea;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3 {
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+    text-transform: uppercase;
+    color: #f4f1ea;
+}
+.editor-styles-wrapper .wp-block-button__link {
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+}
