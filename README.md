@@ -56,6 +56,16 @@ No plugins required. Google Fonts (Oswald + Inter) load automatically; the theme
 ### 1.0.0
 - Initial release: 8 templates, 2 template parts, 10 block patterns, Ice style variation, theme.js interactions, full a11y pass.
 
+## Design Previews
+![forge-main](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-main.png)
+![forge-classes](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-classes.png)
+![forge-gallery](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-gallery.png)
+![forge-transformations](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-transformations.png)
+![forge-pricing](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-pricing.png)
+![forge-trainers](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-trainers.png)
+![forge-mobile](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-mobile.png)
+![forge-ice](https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/forge-ice.png)
+
 ## License
 
 GNU General Public License v2 or later — see `LICENSE`.
